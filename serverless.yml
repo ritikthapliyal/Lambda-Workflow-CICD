@@ -9,4 +9,4 @@ provider:
 functions:
   hello:
     handler: src/handler.generateRandomNumber
-    logGroupName: /aws/lambda/workflow-dev-hello
+    timeout: 10
