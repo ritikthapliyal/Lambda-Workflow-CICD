@@ -5,10 +5,11 @@ provider:
   runtime: nodejs12.x
   stage: dev
   region: us-east-1
-  logRetentionInDays: 14
+  logRetentionInDays: 1
   versionFunctions: true
 
 functions:
   hello:
     handler: src/handler.generateRandomNumber
-    timeout: 10
+    timeout: 10 #seconds
+    memorySize: 128 #memory in MB
